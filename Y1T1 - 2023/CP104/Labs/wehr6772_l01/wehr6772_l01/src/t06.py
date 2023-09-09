@@ -1,6 +1,6 @@
 """
 -------------------------------------------------------
-[program description]
+Calculates your pay based on salary and bonus
 -------------------------------------------------------
 Author:  Tyler Wehrle
 ID:      169056772

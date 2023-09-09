@@ -1,6 +1,6 @@
 """
 -------------------------------------------------------
-[program description]
+Greets you according to your specified name
 -------------------------------------------------------
 Author:  Tyler Wehrle
 ID:      169056772
