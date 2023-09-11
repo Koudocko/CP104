@@ -40,14 +40,12 @@ def draw_hollow_triangle(width, char):
     for num in range(0, width):
         if num == 0: # Top of triange edge case
             print(char)
-        elif num == width - 1: # Every other row
+        if num == width - 1: # Every other row
             print(f"{'':#^{width}s}")
         else: # Bottom of triange edge case
             print(f"#{'#':>{num}s}")
 
     return
-
-
 
 def retirement(age, salary, increase):
     """
