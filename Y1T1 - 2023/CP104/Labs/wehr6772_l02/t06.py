@@ -11,8 +11,10 @@ __updated__ = "2023-09-09"
 
 # Collect input values
 mortgage_principal = float(input("Mortgage principal ($): "))
-num_months = int(input("Number of years: ")) * 12
-monthly_interest = int(input("Yearly interest rate (%): ")) / 100 / 12
+num_months = int(input("Number of years: "))
+num_months *= 12
+monthly_interest = float(input("Yearly interest rate (%): "))
+monthly_interest = monthly_interest / 100 / 12
 
 # Compute equation numerator
 mortgage_numerator = monthly_interest * (1 + monthly_interest) ** num_months
