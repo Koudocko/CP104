@@ -156,10 +156,7 @@ def comma_period_replace(string):
     ------------------------------------------------------
     """
 
-    out = string
 
-    for idx in range(0, len(string)):
-        if string[idx] == ',':
-            string[idx] = '.'
+    out = string.replace(',', '.')
 
     return out

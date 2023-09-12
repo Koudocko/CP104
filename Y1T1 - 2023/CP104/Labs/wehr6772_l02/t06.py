@@ -1,6 +1,6 @@
 """
 -------------------------------------------------------
-Calculate money made from dog grooming for the day
+Calculate mortgage monthly payments
 -------------------------------------------------------
 Author:  Tyler Wehrle
 ID:      169056772
@@ -9,12 +9,16 @@ __updated__ = "2023-09-09"
 -------------------------------------------------------
 """
 
-mortgage_principal = int(input("Mortgage principal ($): "))
+# Collect input values
+mortgage_principal = float(input("Mortgage principal ($): "))
 num_months = int(input("Number of years: ")) * 12
-monthly_interest = int(input("Yearly interest rate (%): ")) / 12
+monthly_interest = int(input("Yearly interest rate (%): ")) / 100 / 12
 
+# Compute equation numerator
 mortgage_numerator = monthly_interest * (1 + monthly_interest) ** num_months
+# Compute equation denominator
 mortgage_denominator = (1 + monthly_interest) ** num_months - 1
+# Compute entire equation
 mortgage = mortgage_principal * mortgage_numerator / mortgage_denominator
 
 print(f"The monthly payments are: $ {mortgage}")
