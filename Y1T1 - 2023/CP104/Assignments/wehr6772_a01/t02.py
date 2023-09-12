@@ -13,4 +13,5 @@ __updated__ = "2023-09-12"
 age = int(input("What is your age? "))
 favourite_band = input("What is your favourite band? ")
 
+# Display the user's age and favourite band
 print(f"I am {age} years old and {favourite_band} is my favourite band.")

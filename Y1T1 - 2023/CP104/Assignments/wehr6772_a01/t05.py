@@ -20,4 +20,5 @@ interest /= 100
 # Use compound interest formula with input variables
 balance = principal * (1 + (interest / num_compound)) ** (num_compound * num_years)
 
+# Display the user's final balance
 print(f"Balance: $ {balance}")

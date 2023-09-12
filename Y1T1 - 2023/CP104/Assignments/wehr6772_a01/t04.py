@@ -16,4 +16,5 @@ num_dosa = int(input("Number of dosa: "))
 # Compute total from input variables
 total = dosa_cost * num_dosa
 
+# Display the total dosa cost
 print(f"Total cost of {num_dosa} dosa: ${total}")
