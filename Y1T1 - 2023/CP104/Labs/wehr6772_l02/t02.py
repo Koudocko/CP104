@@ -12,8 +12,11 @@ __updated__ = "2023-09-09"
 # Constants
 WATER_FREEZING_TEMP_F = 32
 
-# Obtain temperatures
+# Obtain temperature in fahrenheight
 temperature_f = int(input("Temperature (F): "))
+
+# Convert temperature from fahrenheight to celsius
 temperature_c = int((temperature_f - 32) * 5/9)
 
+# Display temperature in celsius
 print(f"Temperature (C): {temperature_c}")

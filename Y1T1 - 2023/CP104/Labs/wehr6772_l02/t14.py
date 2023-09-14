@@ -18,14 +18,17 @@ SALT = 2 # Tablespoons
 
 # Obtain number of servings
 num_servings = int(input("Enter servings of Mac & Cheese: "))
+
 # Normalize amounts to per num_servings
 servings_ratio = num_servings / 6 
-# Compute amounts pre ingredient
+
+# Compute amounts per ingredient
 milk_amount = servings_ratio * MILK
 butter_amount = servings_ratio * BUTTER
 flour_amount = servings_ratio * FLOUR
 salt_amount = servings_ratio * SALT
 
+# Display amounts needed per ingredient
 print(f"{num_servings} servings of Mac & Cheese requires:")
 print(f"milk (cups): {milk_amount:.2f}")
 print(f"butter (cups): {butter_amount:.2f}")

@@ -27,4 +27,5 @@ num_minutes = num_total_seconds // SECONDS_IN_MINUTE
 # Get number of seconds remaining
 num_seconds = num_total_seconds % SECONDS_IN_MINUTE
 
+# Display number of days, hours, minutes, and seconds from total seconds
 print(f"Days: {num_days} Hours: {num_hours} Minutes: {num_minutes} Seconds: {num_seconds}")
