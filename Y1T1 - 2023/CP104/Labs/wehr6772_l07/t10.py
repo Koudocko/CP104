@@ -13,4 +13,4 @@ from functions import employee_payroll
 
 # Call implemented employee_payroll function
 total, average = employee_payroll()
-print(f"{total} {average}")
+print(f"({total:,.2f} {average:,.2f})")

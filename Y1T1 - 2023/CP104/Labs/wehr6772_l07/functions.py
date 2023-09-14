@@ -147,33 +147,54 @@ def employee_payroll():
     ------------------------------------------------------
     """
 
-    TAX_AMOUNT = 1 - (3.625 / 100)
+    # Constants
+    TAX_RATE_P = 3.625
+    TAX_RATE_D = 1 - (TAX_RATE_P / 100)
+    OVERTIME_RATE = 1.5
+    OVERTIME = 40
 
-
-    net_payment = 0
-    employee_count = 1
+    # Initialie 0 defaults
+    employee_count = 0
     total = 0
 
-    employee_id = int(input("Employee ID: "))
-    while employee_id != 0:
+    # Loop while employee id is not 0
+    while True:
+        # Get employee id
+        employee_id = int(input("Employee ID: "))
+
+        # Break out of loop if employee id equals 0
+        if employee_id == 0:
+            break
+
+        # Get employee hourly wage and hours worked
         hourly_wage_rate =  int(input("Hourly wage rate: "))
         hours_worked =  int(input("Hours worked: "))
 
+        # Initialize netpayment for employee
         net_payment = 0
+        # Increment number of employees logged
         employee_count += 1
 
-        if hours_worked > 40:
-            net_payment = (hours_worked - 40) * hourly_wage_rate * 1.5
-            hours_worked = 40
+        # Special behaviour for overtime hours
+        if hours_worked > OVERTIME:
+            # Add overtime paid hours to net payment
+            net_payment = (hours_worked - OVERTIME) * hourly_wage_rate * OVERTIME_RATE
+            # Reset to remaining normal hours
+            hours_worked = OVERTIME
 
+        # Compute net payment for regular hours
         net_payment += hourly_wage_rate * hours_worked
-        net_payment *= TAX_AMOUNT
+        # Add tax rate on top at the end
+        net_payment *= TAX_RATE_D
         
+        # Add employee net payment to the total
         total += net_payment
 
+        # Display net payment for the employee
         print(f"Net payment for employee {employee_id}: ${net_payment:,.2f}\n")
-        employee_id = int(input("Employee ID: "))
 
+    # Compute average from total and number of employees
     average = total / employee_count
+
     return (total, average)
         
