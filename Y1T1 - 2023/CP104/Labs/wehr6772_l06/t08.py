@@ -12,4 +12,4 @@ __updated__ = "2023-09-09"
 from functions import draw_hollow_triangle
 
 # Call implemented draw_hollow_triangle function
-draw_hollow_triangle(8, '#')
+draw_hollow_triangle(9, '#')
