@@ -1,0 +1,158 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+Temperature (F): 77
+Temperature (C): 25
+
+
+Temperature (F): -40
+Temperature (C): -40
+
+
+Temperature (F): 32
+Temperature (C): 0
+
+Temperature (F): -460
+Temperature (C): -273
+
+
+Temperature (F): -1000
+Temperature (C): -573
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+Hourly rate of pay: $32.50
+Hours worked in the week: 36.5
+Total pay for the week: $ 1186.25
+
+
+Hourly rate of pay: $15
+Hours worked in the week: 40
+Total pay for the week: $ 600.00
+
+
+Hourly rate of pay: $1200.30
+Hours worked in the week: 68
+Total pay for the week: $ 81620.40
+
+
+Hourly rate of pay: $-100
+Hours worked in the week: 20.1
+Total pay for the week: $ -2010.00
+
+
+Hourly rate of pay: $87.7
+Hours worked in the week: -3
+Total pay for the week: $ -263.10
+
+-------------------------------------------------------
+t06
+-------------------------------------------------------
+
+Mortgage principal ($): 200000
+Number of years: 20
+Yearly interest rate (%): 5
+The monthly payments are: $ 1319.9114784333176
+
+
+Mortgage principal ($): 10
+Number of years: 10
+Yearly interest rate (%): 100
+The monthly payments are: $ 0.8333894892172605
+
+
+Mortgage principal ($): 1010101
+Number of years: 50
+Yearly interest rate (%): 13.333
+The monthly payments are: $ 11237.903630545206
+
+
+Mortgage principal ($): 1000
+Number of years: 5
+Yearly interest rate (%): -10
+The monthly payments are: $ 12.777679487899256
+
+
+Mortgage principal ($): 3100.5
+Number of years: -18
+Yearly interest rate (%): 2.7
+The monthly payments are: $ -11.163359951664766
+
+-------------------------------------------------------
+t12
+-------------------------------------------------------
+
+Number of seconds: 105050
+Days: 1 Hours: 5 Minutes: 10 Seconds: 50
+
+
+Number of seconds: 360
+Days: 0 Hours: 0 Minutes: 6 Seconds: 0
+
+
+Number of seconds: 31536000
+Days: 365 Hours: 0 Minutes: 0 Seconds: 0
+
+
+Number of seconds: -1
+Days: -1 Hours: 23 Minutes: 59 Seconds: 59
+
+
+Number of seconds: -105050
+Days: -2 Hours: 18 Minutes: 49 Seconds: 10
+
+-------------------------------------------------------
+t14
+-------------------------------------------------------
+
+Enter servings of Mac & Cheese: 3
+3 servings of Mac & Cheese requires:
+milk (cups): 2.00
+butter (cups): 4.00
+flour (cups): 0.25
+salt (cups): 1.00
+
+
+Enter servings of Mac & Cheese: 6
+6 servings of Mac & Cheese requires:
+milk (cups): 4.00
+butter (cups): 8.00
+flour (cups): 0.50
+salt (cups): 2.00
+
+
+Enter servings of Mac & Cheese: 1248
+1248 servings of Mac & Cheese requires:
+milk (cups): 832.00
+butter (cups): 1664.00
+flour (cups): 104.00
+salt (cups): 416.00
+
+
+Enter servings of Mac & Cheese: -3
+-3 servings of Mac & Cheese requires:
+milk (cups): -2.00
+butter (cups): -4.00
+flour (cups): -0.25
+salt (cups): -1.00
+
+
+Enter servings of Mac & Cheese: -100
+-100 servings of Mac & Cheese requires:
+milk (cups): -66.67
+butter (cups): -133.33
+flour (cups): -8.33
+salt (cups): -33.33

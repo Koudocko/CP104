@@ -5,11 +5,12 @@ Convert fahrenheight to celsius
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-09"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
 # Constants
+# Water freezing temperature in fahrenheight
 WATER_FREEZING_TEMP_F = 32
 
 # Obtain temperature in fahrenheight

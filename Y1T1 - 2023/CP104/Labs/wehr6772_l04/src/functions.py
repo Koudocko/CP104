@@ -1,4 +1,16 @@
+# Imports
+# Import pi constant and square root function
 from math import pi, sqrt
+
+# Constants
+NICKEL_VAL = 0.05 # Nickel value
+DIME_VAL = 0.10 # Dime value
+QUARTER_VAL = 0.25 # Quarter value
+LOONIE_VAL = 1.00 # Loonie value
+TOONIE_VAL = 2.00 # Toonie vlaue
+
+# Water freezing temperature in fahrenheit
+WATER_FREEZING_TEMP_F = 32
 
 def area(radius):
     """
@@ -67,12 +79,6 @@ def total_change(nickels, dimes, quarters, loonies, toonies):
     -------------------------------------------------------
     """
 
-    # Coin value constants
-    NICKEL_VAL = 0.05
-    DIME_VAL = 0.10
-    QUARTER_VAL = 0.25
-    LOONIE_VAL = 1.00
-    TOONIE_VAL = 2.00
 
     # Compute total value of coins
     total = (nickels * NICKEL_VAL) + (dimes * DIME_VAL) + (quarters * QUARTER_VAL) + (loonies * LOONIE_VAL) + (toonies * TOONIE_VAL)
@@ -114,8 +120,6 @@ def f_to_c(fahrenheit):
     -------------------------------------------------------
     """
 
-    # Water freezing temperature in fahrenheit
-    WATER_FREEZING_TEMP_F = 32
 
     # Compute celsius from fahrenheit
     celsius = (fahrenheit - 32) * 5/9

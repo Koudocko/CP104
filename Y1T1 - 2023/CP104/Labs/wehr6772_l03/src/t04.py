@@ -12,6 +12,7 @@ __updated__ = "2023-09-09"
 # Obtain inital number and percentage discount
 number = float(input("Enter number: "))
 percent = float(input("Enter percent: ")) 
+
 # Compute the discount by amount
 discount = number * percent / 100
 

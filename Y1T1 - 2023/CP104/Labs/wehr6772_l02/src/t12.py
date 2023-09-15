@@ -5,13 +5,16 @@ Converts total seconds into larger time units
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-09"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
 # Constants
-SECONDS_IN_MINUTE = 60
+# Number of seconds in a minute
+SECONDS_IN_MINUTE = 60 
+# Number of seconds in an hour
 SECONDS_IN_HOUR = SECONDS_IN_MINUTE * 60
+# Number of seconds in a day
 SECONDS_IN_DAY = SECONDS_IN_HOUR * 24
 
 # Obtain total seconds

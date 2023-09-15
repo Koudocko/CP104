@@ -1,3 +1,7 @@
+# Constants
+# Number of weeks IAs work constant
+NUM_WEEKS = 6
+
 def sum_all(start, finish, increment):
     """
     -------------------------------------------------------
@@ -63,20 +67,17 @@ def retirement(age, salary, increase):
     ------------------------------------------------------
     """
 
-    # Chart width constants
-    WIDTH = 18
-    SALARY_WIDTH = WIDTH - 3
 
     # Display headers
-    print(f"Age{'Salary':>{SALARY_WIDTH}s}") 
-    print(f"{'':-^{WIDTH}s}")
+    print(f"Age{'Salary':>{15}s}") 
+    print(f"{'':-^{18}s}")
 
     for year in range(age, 66):
         # Dynamic spacing size
-        ROW_WIDTH = WIDTH - len(str(year))
+        row_width = 18 - len(str(year))
 
         # Display the row values of age and salary
-        print(f"{year}{salary:>{ROW_WIDTH},.2f}")
+        print(f"{year}{salary:>{row_width},.2f}")
         # Increase salary
         salary *= 1 + (increase / 100)
     
@@ -138,8 +139,6 @@ def ia_hours(ia_count):
     ------------------------------------------------------
     """
 
-    # Number of weeks IAs work constant
-    NUM_WEEKS = 6
     
     # Iterate from 1 to NUM_WEEKS (inclusive)
     total_hours = 0

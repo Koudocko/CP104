@@ -157,15 +157,11 @@ def employee_payroll():
     employee_count = 0
     total = 0
 
+    # Get initial employee id
+    employee_id = int(input("Employee ID: "))
+
     # Loop while employee id is not 0
-    while True:
-        # Get employee id
-        employee_id = int(input("Employee ID: "))
-
-        # Break out of loop if employee id equals 0
-        if employee_id == 0:
-            break
-
+    while employee_id != 0:
         # Get employee hourly wage and hours worked
         hourly_wage_rate =  int(input("Hourly wage rate: "))
         hours_worked =  int(input("Hours worked: "))
@@ -192,6 +188,9 @@ def employee_payroll():
 
         # Display net payment for the employee
         print(f"Net payment for employee {employee_id}: ${net_payment:,.2f}\n")
+
+        # Get next employee id
+        employee_id = int(input("Employee ID: "))
 
     # Compute average from total and number of employees
     average = total / employee_count

@@ -5,7 +5,7 @@ Computes the total pay for the week
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-09"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
@@ -17,4 +17,4 @@ hours_worked = float(input("Hours worked in the week: "))
 total_pay = hourly_rate * hours_worked
 
 # Display total pay for the week
-print(f"Total pay for the week: ${total_pay:.2f}")
+print(f"Total pay for the week: $ {total_pay:.2f}")

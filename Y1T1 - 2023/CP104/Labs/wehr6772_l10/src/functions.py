@@ -99,17 +99,16 @@ def count_frequency_word(fh, word):
     # Inital word match count
     count = 0
 
-    while True:
+    # Get initial read line
+    line = fh.readline().strip()
+
+    while line != "":
+        # Process line
+        if line == word:
+            count += 1
+
         # Strip leading/following whitespace
         line = fh.readline().strip()
-
-        # Process line
-        if line != "":
-            if line == word:
-                count += 1
-        # Break if end of file reached
-        else:
-            break
 
     return count
 

@@ -1,3 +1,9 @@
+# Constants
+# Minimum number of employement years to be eligible for a loan
+MIN_EMPLOYMENT_TIME = 5
+# Minimum salary to be eligible for a loan
+MIN_SALARY = 30000
+
 def magic_date(day, month, year):
     """
     -------------------------------------------------------
@@ -126,15 +132,12 @@ def loan():
     -------------------------------------------------------
     """
 
-    # Minimum requirement constants
-    MIM_EMPLOYMENT_TIME = 5
-    MIN_SALARY = 30000
 
     # Obtain years employed
     years_employed = int(input("Years employed: "))
 
     # Nested if statements to prevent empty annual salary from failing
-    if years_employed >= MIM_EMPLOYMENT_TIME:
+    if years_employed >= MIN_EMPLOYMENT_TIME:
         # Obtain annual salary
         annual_salary = int(input("Annual salary: "))
 
