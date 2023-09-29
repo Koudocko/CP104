@@ -1,0 +1,113 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+'I'm a Little Astronaut' by Jean Warren
+
+I'm a little astronaut
+    Flying to the moon.
+        My rocket is ready,
+        We blast off soon.
+I climb aboard
+    And close the hatch.
+        5-4-3-2-1, off we blast!
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Enter number: 500
+Enter percent: 10.5
+A 10.5 percent discount on 500.0 is 52.5
+
+Enter number: 1000
+Enter percent: 99.9
+A 99.9 percent discount on 1000.0 is 999.0
+
+Enter number: 1000
+Enter percent: 99.9
+A 99.9 percent discount on 1000.0 is 999.0
+
+Enter number: 500
+Enter percent: -10.5
+A -10.5 percent discount on 500.0 is -52.5
+
+Enter number: -500
+Enter percent: 10.5
+A 10.5 percent discount on -500.0 is -52.5
+
+-------------------------------------------------------
+t07
+-------------------------------------------------------
+
+Enter cost of breakfast: $6.75
+Enter cost of lunch: $19.34
+Enter cost of supper: $112.81
+Meal         Cost
+Breakfast    $  6.75
+Lunch        $ 19.34
+Supper       $112.81
+Total        $138.90
+
+Enter cost of breakfast: $0
+Enter cost of lunch: $1
+Enter cost of supper: $2
+Meal         Cost
+Breakfast    $  0.00
+Lunch        $  1.00
+Supper       $  2.00
+Total        $  3.00
+
+Enter cost of breakfast: $21.34
+Enter cost of lunch: $27.81
+Enter cost of supper: $264.99
+Meal         Cost
+Breakfast    $ 21.34
+Lunch        $ 27.81
+Supper       $264.99
+Total        $314.14
+
+Enter cost of breakfast: $-100
+Enter cost of lunch: $50   
+Enter cost of supper: $50.1
+Meal         Cost
+Breakfast    $-100.00
+Lunch        $ 50.00
+Supper       $ 50.10
+Total        $  0.10
+
+Enter cost of breakfast: $-6.75
+Enter cost of lunch: $-19.34
+Enter cost of supper: $-112.85
+Meal         Cost
+Breakfast    $ -6.75
+Lunch        $-19.34
+Supper       $-112.85
+Total        $-138.94
+
+-------------------------------------------------------
+t11
+-------------------------------------------------------
+
+left----------------
+-------middle-------
+---------------right
+
+-------------------------------------------------------
+t15
+-------------------------------------------------------
+
+654321
+654321.000000
+654.320000
+Hello World
