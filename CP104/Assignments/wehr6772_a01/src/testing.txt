@@ -1,0 +1,130 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+What is a "program"?
+ 
+A program is a sequence of instructions that specifies how to perform a computation. The
+ details look different in different languages, but a few basic instructions appear in j
+ust about every language:
+input: Get data from the keyboard, a file, or some other device.
+output: Display data on the screen or send data to a file or other device.
+math: Perform basic mathematical operations like addition and multiplication.
+conditional execution: Check for certain conditions and execute the appropriate code.
+repetition: Perform some action repeatedly, usually with some variation. 
+
+Believe it or not, that's pretty much all there is to it.
+"You have enemies? Good. That means you've stood up for something, sometime in your life
+." Winston Churchill
+
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+What is your age? 60
+What is your favourite band? The Beatles
+I am 60 years old and The Beatles is my favourite band.
+
+What is your age? 68
+What is your favourite band? AC/DC
+I am 68 years old and AC/DC is my favourite band.
+
+What is your age? 42
+What is your favourite band? Metallica
+I am 42 years old and Metallica is my favourite band.
+
+What is your age? 0
+What is your favourite band? Baby Rock
+I am 0 years old and Baby Rock is my favourite band.
+
+What is your age? -100
+What is your favourite band? Undefined Rock
+I am -100 years old and Undefined Rock is my favourite band.
+
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+Length in miles: 35
+Length in km: 56.35
+
+Length in miles: 56.35
+Length in km: 90.7235
+
+Length in miles: 630
+Length in km: 1014.3000000000001
+
+Length in miles: -35
+Length in km: -56.35
+
+Length in miles: 0
+Length in km: 0.0
+
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Cost of 1 dosa: $1.95
+Number of dosa: 3
+Total cost of 3 dosa: $5.85
+
+Cost of 1 dosa: $1.95
+Number of dosa: 1
+Total cost of 1 dosa: $1.95
+
+Cost of 1 dosa: $9.99
+Number of dosa: 1000
+Total cost of 1000 dosa: $9990.0
+
+Cost of 1 dosa: $-1.95
+Number of dosa: 3
+Total cost of 3 dosa: $-5.85
+
+Cost of 1 dosa: $1.95
+Number of dosa: -3
+Total cost of -3 dosa: $-5.85
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+Principal: $5000.00
+Interest (%): 5.0
+Number of years: 10
+Number of times interest compounded per year: 12
+Balance: $ 8235.0474884514
+
+Principal: $100
+Interest (%): 10
+Number of years: 2
+Number of times interest compounded per year: 1
+Balance: $ 121.00000000000001
+
+Principal: $500
+Interest (%): 100
+Number of years: 1
+Number of times interest compounded per year: 1
+Balance: $ 1000.0
+
+Principal: $5000.00
+Interest (%): -5.0
+Number of years: 10
+Number of times interest compounded per year: 12
+Balance: $ 3029.4871360841876
+
+Principal: $5000.00
+Interest (%): 5.0
+Number of years: 10
+Number of times interest compounded per year: -12
+Balance: $ 8252.221870238456
