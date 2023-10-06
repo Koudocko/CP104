@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Lab 4 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 # Imports
 # Import pi constant and square root function
 from math import pi, sqrt
@@ -79,7 +90,6 @@ def total_change(nickels, dimes, quarters, loonies, toonies):
     -------------------------------------------------------
     """
 
-
     # Compute total value of coins
     total = (nickels * NICKEL_VAL) + (dimes * DIME_VAL) + (quarters * QUARTER_VAL) + (loonies * LOONIE_VAL) + (toonies * TOONIE_VAL)
     return total
@@ -119,7 +129,6 @@ def f_to_c(fahrenheit):
         celsius - equivalent to celsius (float)
     -------------------------------------------------------
     """
-
 
     # Compute celsius from fahrenheit
     celsius = (fahrenheit - 32) * 5/9

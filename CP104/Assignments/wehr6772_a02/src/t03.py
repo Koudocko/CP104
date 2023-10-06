@@ -22,4 +22,4 @@ month = remainder // 100
 day = remainder % 100
 
 # Display the reformatted date
-print(f"The reformatted date: {year}/{month}/{day}")
+print(f"The reformatted date: {year}/{month:02d}/{day:02d}")

@@ -10,18 +10,19 @@ __updated__ = "2023-09-12"
 """
 
 # Constants
-ANNUAL_TAX_D = 0.185
-ANNUAL_TAX_P = ANNUAL_TAX_D * 100
+ANNUAL_TAX_D = 0.185 # Decimal form
+ANNUAL_TAX_P = ANNUAL_TAX_D * 100 # Percent form
 
 # Get total sales input
 total_sales = int(input("Enter the total sales: $"))
+
 # Calculate tax based on annual tax rate
 tax = total_sales * ANNUAL_TAX_D
 
 # Display the tax report
 print("Projected Tax Report")
 print(f"{'':-^26s}")
-print(f"Total sales:   ${total_sales:10,.2f}")
-print(f"Annual tax:    %{ANNUAL_TAX_P:10.2f}")
+print(f"Total sales:   $ {total_sales:,.2f}")
+print(f"Annual tax:    % {ANNUAL_TAX_P:.2f}")
 print(f"{'':-^26s}")
-print(f"Tax:           ${tax:10,.2f}")
+print(f"Tax:           $ {tax:9,.2f}")
