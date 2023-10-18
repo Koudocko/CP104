@@ -1,0 +1,112 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Input day: 6
+Input month: 10
+Input year: 60
+magic_date(6, 10, 60) -> True
+
+Input day: 5
+Input month: 10
+Input year: 55
+magic_date(5, 10, 55) -> False
+
+Input day: -6
+Input month: 10
+Input year: -60
+magic_date(-6, 10, -60) -> True
+
+Input day: -5
+Input month: 10
+Input year: 55
+magic_date(-5, 10, 55) -> False
+
+-------------------------------------------------------
+t06
+-------------------------------------------------------
+
+Enter number to be divided: 15
+Enter first number to divide: 3
+Enter second number to divide: 5
+is_divisible(15, 3, 5) -> True
+
+Enter number to be divided: 15
+Enter first number to divide: 3
+Enter second number to divide: 6
+is_divisible(15, 3, 6) -> False
+
+Enter number to be divided: 1 
+Enter first number to divide: 1
+Enter second number to divide: 1
+is_divisible(1, 1, 1) -> True
+
+Enter number to be divided: -15
+Enter first number to divide: -3
+Enter second number to divide: -5
+is_divisible(-15, -3, -5) -> True
+
+-------------------------------------------------------
+t09
+-------------------------------------------------------
+
+Input wind speed: 95
+wind_speed(95) -> Whole Gale
+
+Input wind speed: 1000
+wind_speed(1000) -> Hurricane
+
+Input wind speed: -100
+wind_speed(-100) -> Unknown
+
+Input wind speed: 39
+wind_speed(39) -> Strong Wind
+
+
+-------------------------------------------------------
+t11
+-------------------------------------------------------
+
+Input x coordinate: 0
+Input y coordinate: -3
+quadrant(0, -3) -> Y-Axis
+
+Input x coordinate: -10
+Input y coordinate: -10
+quadrant(-10, -10) -> Quadrant 3
+
+Input x coordinate: 0
+Input y coordinate: 0
+quadrant(0, 0) -> Origin
+
+Input x coordinate: 1000
+Input y coordinate: 0
+quadrant(1000, 0) -> X-Axis
+
+-------------------------------------------------------
+t13
+-------------------------------------------------------
+
+Years employed: 6
+Annual salary: 45000
+loan() -> True
+
+Years employed: 1
+loan() -> False
+
+Years employed: 45
+Annual salary: 3000
+loan() -> False
+
+Years employed: -6
+loan() -> False

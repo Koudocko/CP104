@@ -1,0 +1,109 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Square footage: 100000.0
+footage_to_acres(100000.0) -> 2.295684113865932
+
+Square footage: 43560
+footage_to_acres(43560.0) -> 1.0
+
+Square footage: -100000.0
+footage_to_acres(-100000.0) -> -2.295684113865932
+
+Square footage: 0.005
+footage_to_acres(0.005) -> 1.147842056932966e-07
+
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+Width (m): 20.0
+Length (m): 50.0
+Speed (m^2/minute): 4.0
+lawn_mow_time(20.0, 50.0, 4.0) -> 250.0
+
+Width (m): 10
+Length (m): 10
+Speed (m^2/minute): 10
+lawn_mow_time(10.0, 10.0, 10.0) -> 10.0
+
+Width (m): 0
+Length (m): 1000
+Speed (m^2/minute): 50
+lawn_mow_time(0.0, 1000.0, 50.0) -> 0.0
+
+Width (m): 20.0
+Length (m): 50.0
+Speed (m^2/minute): -4.0
+lawn_mow_time(20.0, 50.0, -4.0) -> -250.0
+
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+Enter a date in the format YYYYMMDD: 19621025
+extract_date(19621025) -> 1962, 10, 25
+
+Enter a date in the format YYYYMMDD: 19910220
+extract_date(19910220) -> 1991, 2, 20
+
+Enter a date in the format YYYYMMDD: -19621025
+extract_date(-19621025) -> -1963, 89, 75
+
+Enter a date in the format YYYYMMDD: 000001
+extract_date(1) -> 0, 0, 1
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Numerator 1: 1
+Denominator 1: 2
+Numerator 2: 3
+Denominator 2: 4
+multiply_fractions(1, 2, 3, 4) -> 3, 8, 0.375
+
+Numerator 1: 5
+Denominator 1: 1
+Numerator 2: 2
+Denominator 2: 1
+multiply_fractions(5, 1, 2, 1) -> 10, 1, 10.0
+
+Numerator 1: 0  
+Denominator 1: 2
+Numerator 2: 3
+Denominator 2: 4
+multiply_fractions(0, 2, 3, 4) -> 0, 8, 0.0
+
+Numerator 1: 0  
+Denominator 1: 2
+Numerator 2: 3
+Denominator 2: 4
+multiply_fractions(0, 2, 3, 4) -> 0, 8, 0.0
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+Input time taken to fall: 15
+falling_distance(15) -> 1102.5
+
+Input time taken to fall: 3600
+falling_distance(3600) -> 63504000.00000001
+
+Input time taken to fall: 1
+falling_distance(1) -> 4.9
+
+Input time taken to fall: -15 
+falling_distance(-15) -> 1102.5

@@ -1,9 +1,17 @@
-# Imports
-from math import exp
-from random import randint
+"""
+-------------------------------------------------------
+Assignment 3 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
 
 # Constants
-SFEET_TO_ACRE = 43560
+SFEET_TO_ACRE = 43560 # Square feet to acre ratio
+GRAVITY_ACCEL = 9.8 # Gravitational acceleration constant on Earth
 
 def footage_to_acres(square_feet):
     """
@@ -91,35 +99,30 @@ def multiply_fractions(num1, den1, num2, den2):
     den = den1 * den2 
     # Compute overall fraction product
     product = num / den
-    
+
     return (num, den, product)
 
-def math_quiz():
+def falling_distance(falling_time):
     """
     -------------------------------------------------------
-    Plays a simple math addition quiz
-    Use: math_quiz()
+    Calculates distance an object has fallen due to gravity given
+    the time it is fallen.
+    Use: distance = falling_distance(falling_time)
     -------------------------------------------------------
+    Parameters:
+        falling_time - time object has fallen in seconds (int >= 0)
     Returns:
-        None
+        distance - distance object has fallen in metres (float)
     -------------------------------------------------------
     """
 
-    # Generate two random numbers
-    rand_num1 = randint(0, 999)
-    rand_num2 = randint(0, 999)
+    # Rearrange for time:
+    # t = sqrt(2d/g)
+    # t^2 = 2d/g
+    # gt^2 = 2d
+    # gt^2/2 = d
 
-    # Display the addition problem
-    print(f"{rand_num1:5}")
-    print(f"+ {rand_num2:3}")
+    # Compute distance object fell with respect to fall time
+    distance = (falling_time ** 2) * GRAVITY_ACCEL / 2
 
-    # Get the user answer
-    user_answer = int(input("Your answer: "))
-    # Compute the expected answer
-    expected_answer = rand_num1 + rand_num2
-
-    # Display your answer and the expected one
-    print(f"Your answer:{user_answer:4}")
-    print(f"Expected:{expected_answer:7}")
-
-    return
+    return distance

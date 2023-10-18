@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Lab 5 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 # Constants
 # Minimum number of employement years to be eligible for a loan
 MIN_EMPLOYMENT_TIME = 5
