@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Lab 6 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 # Constants
 # Number of weeks IAs work constant
 NUM_WEEKS = 6
@@ -18,8 +29,7 @@ def sum_all(start, finish, increment):
             finish by increment (int)
     ------------------------------------------------------
     """
-    
-    x = range(0, 10)
+
     # Use range in for loop to obtain nums to be summed 
     total = 0
     for num in range(start, finish + 1, increment):
@@ -46,9 +56,9 @@ def draw_hollow_triangle(width, char):
         if num == 0: # Top of triange edge case
             print(char)
         elif num == width - 1: # Every other row
-            print(f"{'':#^{width}s}")
+            print(f"{'':{char}^{width}s}")
         else: # Bottom of triange edge case
-            print(f"#{'#':>{num}s}")
+            print(f"{char}{char:>{num}s}")
 
     return
 
@@ -70,8 +80,8 @@ def retirement(age, salary, increase):
 
 
     # Display headers
-    print(f"Age{'Salary':>{15}s}") 
-    print(f"{'':-^{18}s}")
+    print("Age         Salary") 
+    print("------------------")
 
     for year in range(age, 66):
         # Dynamic spacing size
@@ -108,9 +118,9 @@ def lumber(b_min, b_max, b_inc, h_min, h_max, h_inc):
     """
 
     # Display headers
-    print(f"{'Cross-Sectional':>29s}  Moment of  Section")
-    print(f"Base  Height  Area{'Inertia':>20s}    Modulus")
-    print(f"{'':-^49s}")
+    print("              Cross-Sectional  Moment of  Section")
+    print("Base  Height  Area             Inertia    Modulus")
+    print("-------------------------------------------------")
 
     # Nested for loops, heights as the inner and bases as the outer
     for base in range(b_min, b_max + 1, b_inc):

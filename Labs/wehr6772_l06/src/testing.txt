@@ -1,0 +1,302 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+Input start: 5
+Input finish: 10
+Input increment: 1
+sum_all(5, 10, 1) -> 45
+
+Input start: 5
+Input finish: 10
+Input increment: 5
+sum_all(5, 10, 5) -> 15
+
+Input start: 10
+Input finish: 5
+Input increment: 1
+sum_all(10, 5, 1) -> 0
+
+Input start: 10
+Input finish: 5
+Input increment: -1
+sum_all(10, 5, -1) -> 34
+
+-------------------------------------------------------
+t08
+-------------------------------------------------------
+
+Input width: 8
+Input width: #
+draw_hollow_triangle(8, #) ->
+#
+##
+# #
+#  #
+#   #
+#    #
+#     #
+########
+
+Input width: 3
+Input width: 3
+draw_hollow_triangle(3, 3) ->
+3
+33
+333
+
+Input width: -8
+Input width: #
+draw_hollow_triangle(-8, #) ->
+
+Input width: 0
+Input width: #
+draw_hollow_triangle(0, #) ->
+
+-------------------------------------------------------
+t11
+-------------------------------------------------------
+
+Input worker's age: 25
+Input worker's salary: 56000
+Input worker's increase: 1.5
+retirement(25, 56000.0, 1.5) ->
+Age         Salary
+------------------
+25       56,000.00
+26       56,840.00
+27       57,692.60
+28       58,557.99
+29       59,436.36
+30       60,327.90
+31       61,232.82
+32       62,151.32
+33       63,083.58
+34       64,029.84
+35       64,990.29
+36       65,965.14
+37       66,954.62
+38       67,958.94
+39       68,978.32
+40       70,013.00
+41       71,063.19
+42       72,129.14
+43       73,211.08
+44       74,309.24
+45       75,423.88
+46       76,555.24
+47       77,703.57
+48       78,869.12
+49       80,052.16
+50       81,252.94
+51       82,471.73
+52       83,708.81
+53       84,964.44
+54       86,238.91
+55       87,532.49
+56       88,845.48
+57       90,178.16
+58       91,530.83
+59       92,903.80
+60       94,297.35
+61       95,711.81
+62       97,147.49
+63       98,604.70
+64      100,083.77
+65      101,585.03
+
+Input worker's age: 64
+Input worker's salary: 100 
+Input worker's increase: 7.5
+retirement(64, 100.0, 7.5) ->
+Age         Salary
+------------------
+64          100.00
+65          107.50
+
+Input worker's age: 70
+Input worker's salary: 56000
+Input worker's increase: 1.5
+retirement(70, 56000.0, 1.5) ->
+Age         Salary
+------------------
+
+Input worker's age: 64
+Input worker's salary: -56000
+Input worker's increase: -1.5
+retirement(64, -56000.0, -1.5) ->
+Age         Salary
+------------------
+64      -56,000.00
+65      -55,160.00
+
+-------------------------------------------------------
+t13
+-------------------------------------------------------
+
+Input base minimum: 2
+Input base maximum: 10
+Input base increment: 2
+Input height minimum: 2
+Input height maximum: 12
+Input height increment: 2
+lumber(2, 10, 2, 2, 12, 2) ->
+              Cross-Sectional  Moment of  Section
+Base  Height  Area             Inertia    Modulus
+-------------------------------------------------
+   2  X    2             4.00       1.33     1.33
+   2  X    4             8.00      10.67     5.33
+   2  X    6            12.00      36.00    12.00
+   2  X    8            16.00      85.33    21.33
+   2  X   10            20.00     166.67    33.33
+   2  X   12            24.00     288.00    48.00
+   4  X    2             8.00       2.67     2.67
+   4  X    4            16.00      21.33    10.67
+   4  X    6            24.00      72.00    24.00
+   4  X    8            32.00     170.67    42.67
+   4  X   10            40.00     333.33    66.67
+   4  X   12            48.00     576.00    96.00
+   6  X    2            12.00       4.00     4.00
+   6  X    4            24.00      32.00    16.00
+   6  X    6            36.00     108.00    36.00
+   6  X    8            48.00     256.00    64.00
+   6  X   10            60.00     500.00   100.00
+   6  X   12            72.00     864.00   144.00
+   8  X    2            16.00       5.33     5.33
+   8  X    4            32.00      42.67    21.33
+   8  X    6            48.00     144.00    48.00
+   8  X    8            64.00     341.33    85.33
+   8  X   10            80.00     666.67   133.33
+   8  X   12            96.00    1152.00   192.00
+  10  X    2            20.00       6.67     6.67
+  10  X    4            40.00      53.33    26.67
+  10  X    6            60.00     180.00    60.00
+  10  X    8            80.00     426.67   106.67
+  10  X   10           100.00     833.33   166.67
+  10  X   12           120.00    1440.00   240.00
+
+Input base minimum: 0 
+Input base maximum: 10
+Input base increment: 5
+Input height minimum: 0
+Input height maximum: 10
+Input height increment: 5
+lumber(0, 10, 5, 0, 10, 5) ->
+              Cross-Sectional  Moment of  Section
+Base  Height  Area             Inertia    Modulus
+-------------------------------------------------
+   0  X    0             0.00       0.00     0.00
+   0  X    5             0.00       0.00     0.00
+   0  X   10             0.00       0.00     0.00
+   5  X    0             0.00       0.00     0.00
+   5  X    5            25.00      52.08    20.83
+   5  X   10            50.00     416.67    83.33
+  10  X    0             0.00       0.00     0.00
+  10  X    5            50.00     104.17    41.67
+  10  X   10           100.00     833.33   166.67
+
+Input base minimum: 0 
+Input base maximum: 2
+Input base increment: 1
+Input height minimum: 0
+Input height maximum: -2
+Input height increment: 1
+lumber(0, 2, 1, 0, -2, 1) ->
+              Cross-Sectional  Moment of  Section
+Base  Height  Area             Inertia    Modulus
+-------------------------------------------------
+
+Input base minimum: 0
+Input base maximum: -10
+Input base increment: -5
+Input height minimum: 0
+Input height maximum: -10
+Input height increment: -5
+lumber(0, -10, -5, 0, -10, -5) ->
+              Cross-Sectional  Moment of  Section
+Base  Height  Area             Inertia    Modulus
+-------------------------------------------------
+   0  X    0             0.00       0.00     0.00
+   0  X   -5             0.00       0.00     0.00
+  -5  X    0             0.00       0.00     0.00
+  -5  X   -5            25.00      52.08   -20.83
+
+-------------------------------------------------------
+t14
+-------------------------------------------------------
+
+Input number of IAs: 2
+Week 1
+  Marking hours for IA 1: 2.5
+  Marking hours for IA 2: 3
+Week 2
+  Marking hours for IA 1: 4.25
+  Marking hours for IA 2: 1
+Week 3
+  Marking hours for IA 1: 6
+  Marking hours for IA 2: 1
+Week 4
+  Marking hours for IA 1: 8
+  Marking hours for IA 2: 7
+Week 5
+  Marking hours for IA 1: 4
+  Marking hours for IA 2: 9
+Week 6
+  Marking hours for IA 1: 6
+  Marking hours for IA 2: 1
+ia_hours(2) -> 52.75
+
+Input number of IAs: 1
+Week 1
+  Marking hours for IA 1: 1
+Week 2
+  Marking hours for IA 1: 1
+Week 3
+  Marking hours for IA 1: 1
+Week 4
+  Marking hours for IA 1: 1
+Week 5
+  Marking hours for IA 1: 1
+Week 6
+  Marking hours for IA 1: 1
+ia_hours(1) -> 6.0
+
+ -2
+Week 1
+Week 2
+Week 3
+Week 4
+Week 5
+Week 6
+ia_hours(-2) -> 0
+
+Input number of IAs: 2
+Week 1
+  Marking hours for IA 1: -10
+  Marking hours for IA 2: -10
+Week 2
+  Marking hours for IA 1: -15
+  Marking hours for IA 2: -15
+Week 3
+  Marking hours for IA 1: -20
+  Marking hours for IA 2: -20
+Week 4
+  Marking hours for IA 1: 5
+  Marking hours for IA 2: 5
+Week 5
+  Marking hours for IA 1: 5
+  Marking hours for IA 2: 5
+Week 6
+  Marking hours for IA 1: 5
+  Marking hours for IA 2: 5
+ia_hours(2) -> -60.0

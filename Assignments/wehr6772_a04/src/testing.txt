@@ -1,0 +1,101 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Please enter a number between 1 and 7: 1
+day_of_the_week(1) -> Sunday
+
+Please enter a number between 1 and 7: 6
+day_of_the_week(6) -> Friday
+
+Please enter a number between 1 and 7: 0
+day_of_the_week(0) -> Error
+
+Please enter a number between 1 and 7: -1
+day_of_the_week(-1) -> Error
+
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+Enter AQI: 256
+pollution_ranking(256) -> Very Unhealthy
+
+Enter AQI: 200
+pollution_ranking(200) -> Unhealthy
+
+Enter AQI: 0
+pollution_ranking(0) -> Good
+
+Enter AQI: -256
+pollution_ranking(-256) -> Error
+
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+First value: -8.0
+Second value: 12.0
+Third value: 20.0
+largest_average(-8.0, 12.0, 20.0) -> 16.0
+
+First value: 1
+Second value: 1
+Third value: 2
+largest_average(1.0, 1.0, 2.0) -> 1.5
+
+First value: -5
+Second value: 5
+Third value: -10
+largest_average(-5.0, 5.0, -10.0) -> 0.0
+
+First value: 0
+Second value: 0
+Third value: 50
+largest_average(0.0, 0.0, 50.0) -> 25.0
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+First colour: green
+Second colour: red
+colour_combine(green, red) -> yellow
+
+First colour: red
+Second colour: red
+colour_combine(red, red) -> red
+
+First colour: yellow
+Second colour: orange
+colour_combine(yellow, orange) -> Error
+
+First colour: transparent
+Second colour: opaque
+colour_combine(transparent, opaque) -> Error
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+Number: 14 
+hoo_rah(14) -> Hoo Rah
+
+Number: -43
+hoo_rah(-43) -> Zip
+
+Number: 4
+hoo_rah(4) -> Hoo
+
+Number: 21
+hoo_rah(21) -> Rah
