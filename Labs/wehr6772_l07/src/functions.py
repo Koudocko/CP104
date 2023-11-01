@@ -1,5 +1,22 @@
+"""
+-------------------------------------------------------
+Lab 6 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 # Imports
 from random import randint
+
+# Constants
+TAX_RATE_P = 3.625
+TAX_RATE_D = 1 - (TAX_RATE_P / 100)
+OVERTIME_RATE = 1.5
+OVERTIME = 40
 
 def hi_lo_game(high):
     """
@@ -32,7 +49,6 @@ def hi_lo_game(high):
 
     # Congratulations once loop exits
     print("Congratulations - good guess!")
-    print(f"You made {count} guesses.")
 
     return count
 
@@ -50,7 +66,6 @@ def power_of_two(target):
     -------------------------------------------------------
     """
 
-    
     exponent = 0
     # Keep incrementing exponent until power of two is >= to target
     while 2 ** exponent < target:
@@ -146,12 +161,6 @@ def employee_payroll():
         average - average employee net wages (float)
     ------------------------------------------------------
     """
-
-    # Constants
-    TAX_RATE_P = 3.625
-    TAX_RATE_D = 1 - (TAX_RATE_P / 100)
-    OVERTIME_RATE = 1.5
-    OVERTIME = 40
 
     # Initialie 0 defaults
     employee_count = 0

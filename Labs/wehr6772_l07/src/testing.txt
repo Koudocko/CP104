@@ -1,0 +1,148 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Enter maximum random value (>1): 100
+Guess: 50
+Too high, try again.
+Guess: 25
+Too high, try again.
+Guess: 10
+Too low, try again.
+Guess: 15
+Congratulations - good guess!
+You made 4 guesses.
+
+Enter maximum random value (>1): 3
+Guess: 2
+Too high, try again.
+Guess: 1
+Congratulations - good guess!
+You made 2 guesses.
+
+Enter maximum random value (>1): 10
+Guess: 5
+Congratulations - good guess!
+You made 1 guesses.
+
+Enter maximum random value (>1): 1
+Guess: 1
+Congratulations - good guess!
+You made 1 guesses.
+
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+Enter power of two target: 3
+4
+
+Enter power of two target: 4
+4
+
+Enter power of two target: 0
+1
+
+Enter power of two target: -100
+1
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Input target for sum of squares: 26
+30
+
+Input target for sum of squares: 5
+5
+
+Input target for sum of squares: 0
+1
+
+Input target for sum of squares: -100
+1
+
+-------------------------------------------------------
+t08
+-------------------------------------------------------
+
+Enter available balance: 200
+Enter an expense (0 to quite): $150.00
+Enter another expense (0 to quite): $23.00
+Enter another expense (0 to quite): $12.00
+Enter another expense (0 to quite): $15.00
+Enter another expense (0 to quite): $37.50
+Enter another expense (0 to quite): $65.00
+Enter another expense (0 to quite): $0
+(302.5, -102.5, 'Deficit')
+
+Enter available balance: 50
+Enter an expense (0 to quite): $1000 
+Enter another expense (0 to quite): $0
+(1000.0, -950.0, 'Deficit')
+
+Enter available balance: -200
+Enter an expense (0 to quite): $0
+(0.0, -200.0, 'Deficit')
+
+Enter available balance: 570
+Enter an expense (0 to quite): $7
+Enter another expense (0 to quite): $75
+Enter another expense (0 to quite): $92
+Enter another expense (0 to quite): $360
+Enter another expense (0 to quite): $0
+(534.0, 36.0, 'Surplus')
+
+-------------------------------------------------------
+t10
+-------------------------------------------------------
+
+Employee ID: 123
+Hourly wage rate: 45
+Hours worked: 46
+Net payment for employee 123: $2,125.07
+
+Employee ID: 124
+Hourly wage rate: 30
+Hours worked: 46
+Net payment for employee 124: $1,416.71
+
+
+Employee ID: 0
+(3,541.78, 1,770.89)
+
+Employee ID: 1
+Hourly wage rate: 15
+Hours worked: 20
+Net payment for employee 1: $289.12
+
+Employee ID: 0
+(289.12, 289.12)
+
+
+Employee ID: 123
+Hourly wage rate: -45
+Hours worked: -46
+Net payment for employee 123: $1,994.96
+
+Employee ID: 0
+(1,994.96, 1,994.96)
+
+
+Employee ID: 123
+Hourly wage rate: 45
+Hours worked: -46
+Net payment for employee 123: $-1,994.96
+
+Employee ID: 0
+(-1,994.96, -1,994.96)

@@ -1,0 +1,162 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Enter number: 5
+calc_factorial(5) -> 120
+
+Enter number: 15
+calc_factorial(15) -> 1307674368000
+
+Enter number: 0
+calc_factorial(0) -> 1
+
+Enter number: -5
+calc_factorial(-5) -> 1
+
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+Calories burned per minute: 4.1
+Number of minutes on treadmill: 20
+calories_treadmill(4.1, 20) ->
+  5  20.5
+ 10  41.0
+ 15  61.5
+ 20  82.0
+
+Calories burned per minute: 100
+Number of minutes on treadmill: 5
+calories_treadmill(100.0, 5) ->
+  5 500.0
+
+Calories burned per minute: 0
+Number of minutes on treadmill: 20
+calories_treadmill(0.0, 20) ->
+  5   0.0
+ 10   0.0
+ 15   0.0
+ 20   0.0
+
+Calories burned per minute: -5 
+Number of minutes on treadmill: -20
+calories_treadmill(-5.0, -20) ->
+
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+Number of rows: 4
+arrow_up(4) ->
+   #
+  # #
+ #   #
+#     #
+
+Number of rows: 15
+arrow_up(15) ->
+              #
+             # #
+            #   #
+           #     #
+          #       #
+         #         #
+        #           #
+       #             #
+      #               #
+     #                 #
+    #                   #
+   #                     #
+  #                       #
+ #                         #
+#                           #
+
+Number of rows: -4
+arrow_up(-4) ->
+
+Number of rows: 0
+arrow_up(0) ->
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Start number: 2
+Stop number: 4
+multiplication_table(2, 4) ->
+           2    3    4
+       ---------------
+    2 |    4    6    8
+    3 |    6    9   12
+    4 |    8   12   16
+
+Start number: 1
+Stop number: 10
+multiplication_table(1, 10) ->
+           1    2    3    4    5    6    7    8    9   10
+       --------------------------------------------------
+    1 |    1    2    3    4    5    6    7    8    9   10
+    2 |    2    4    6    8   10   12   14   16   18   20
+    3 |    3    6    9   12   15   18   21   24   27   30
+    4 |    4    8   12   16   20   24   28   32   36   40
+    5 |    5   10   15   20   25   30   35   40   45   50
+    6 |    6   12   18   24   30   36   42   48   54   60
+    7 |    7   14   21   28   35   42   49   56   63   70
+    8 |    8   16   24   32   40   48   56   64   72   80
+    9 |    9   18   27   36   45   54   63   72   81   90
+   10 |   10   20   30   40   50   60   70   80   90  100
+
+Start number: 4
+Stop number: 2
+multiplication_table(4, 2) ->
+           4    3    2
+       ---------------
+    4 |   16   12    8
+    3 |   12    9    6
+    2 |    8    6    4
+
+Start number: 0
+Stop number: -4
+multiplication_table(0, -4) ->
+           0   -1   -2   -3   -4
+       -------------------------
+    0 |    0    0    0    0    0
+   -1 |    0    1    2    3    4
+   -2 |    0    2    4    6    8
+   -3 |    0    3    6    9   12
+   -4 |    0    4    8   12   16
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+Start number: 1
+Increment amount: 2
+Count number: 20
+range_addition(1, 2, 20) -> 400
+
+Start number: 0
+Increment amount: 1
+Count number: 4
+range_addition(0, 1, 4) -> 6
+
+Start number: 1
+Increment amount: -2
+Count number: 20
+range_addition(1, -2, 20) -> -360
+
+Start number: 1
+Increment amount: 2
+Count number: -20
+range_addition(1, 2, -20) -> 0
