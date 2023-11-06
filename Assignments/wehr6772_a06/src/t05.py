@@ -1,22 +1,22 @@
 """
 -------------------------------------------------------
-Displays the number of digits in a number.
+Determine the sum of factors of a number.
 -------------------------------------------------------
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-12"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
 # Imports
-from functions import count_of_digits
+from functions import factor_summation
 
 # Get input number
 number = int(input("Input number: "))
 
-# Compute number of digits in number
-digits = count_of_digits(number)
+# Compute sum of factors of number
+total = factor_summation(number)
 
-# Display number of digits in number
-print(f"count_of_digits({digits}) -> {digits}")
+# Display total of all factors of number
+print(f"factor_summation({number}) -> {total}")

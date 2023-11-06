@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Assignment 6 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 def total_wins():
     """
     -------------------------------------------------------
@@ -15,20 +26,19 @@ def total_wins():
     purple_count = 0
     gold_count = 0
 
-    while True:
+    # Initialize winning team as nothing
+    winning_team = " "
+
+    while winning_team != "":
+        # Get winning team input
         winning_team = input("Enter the winning team: ")
 
-        # If something is input
-        if winning_team != "":
-            # Increment purple wins if purple
-            if winning_team == "purple":
-                purple_count += 1
-            # Increment gold wins if gold
-            elif winning_team == "gold":
-                gold_count += 1
-        # Break if empty input
-        else:
-            break
+        # Increment purple wins if purple
+        if winning_team == "purple":
+            purple_count += 1
+        # Increment gold wins if gold
+        elif winning_team == "gold":
+            gold_count += 1
 
     return (purple_count, gold_count)
 
@@ -45,15 +55,23 @@ def detect_prime(number):
     ------------------------------------------------------
     """
 
+    # Default initialize prime state and factor (guilty until proven innocent)
     prime = True
-    factor = 2
+    factor = 3
 
-    while factor < number:
-        if number % factor == 0:
-            prime = False
-            break
+    # Eliminates all even numbers
+    if number % 2 == 0 and number != 2:
+        prime = False
+    else:
+        # Loop for each potential factor in number
+        while factor < number:
+            # Proven innocent, update prime state
+            if number % factor == 0:
+                prime = False;
+                break
 
-        factor += 1
+            # Next odd factor
+            factor += 2
 
     return prime
 
@@ -72,15 +90,16 @@ def interest_table(principal_amount, interest_rate, payment):
     ------------------------------------------------------
     """
 
-
+    # Display loan info
     print(f"Principal: ${principal_amount:9.2f}") 
     print(f"Interest interest_rate : {interest_rate:.2f}%") 
-    print(f"Monthly payment: ${payment:.2f}%") 
+    print(f"Monthly payment: ${payment:.2f}") 
 
 
-    print(f"{'':-^34s}")
+    # Display table header
+    print("----------------------------------")
     print(f"Month Interest   Payment   Balance")
-    print(f"{'':-^34s}")
+    print("----------------------------------")
 
     # Turn annual interest rate into a decimal montly interest rate
     monthly_interest_rate = interest_rate / 12 / 100
@@ -98,14 +117,13 @@ def interest_table(principal_amount, interest_rate, payment):
         # Deduct payment, add interest
         else:
             principal_amount -= payment - interest
-        
 
+        # Display current table row
         print(f"{month:>5d}{interest:>9.2f}{payment:>10.2f}{principal_amount:>10.2f}")
         month += 1 
 
     return
 
-import time
 def count_of_digits(number):
     """
     -------------------------------------------------------
@@ -155,12 +173,19 @@ def factor_summation(number):
     total = 0
     factor = 1
 
+    # Eliminate even numbers if possible
+    if number % 2 == 0:
+        increment = 1
+    else:
+        increment = 2
+
     # Loop until the potential factor is the same as the number
     while factor < number:
         # If evenly divisible, add factor total
         if number % factor == 0:
             total += factor
 
-        factor += 1
+        # Move to next possible factor
+        factor += increment
 
     return total

@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Lab 7 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 def get_digit_name(n):
     """
     -------------------------------------------------------
@@ -10,7 +21,10 @@ def get_digit_name(n):
         name - matching digit, 0 = "zero", 9 = "nine" (str)
     -------------------------------------------------------
     """
+
+    # List of english numbers associated with digits
     names = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'] 
+    # Associative, get number from digit
     name = names[n]
 
     return name
@@ -32,18 +46,23 @@ def list_stats(values):
     -------------------------------------------------------
     """
 
-    # Sort values list ascending order
-    values.sort()
-
-    # First index is smallest
+    # Starting point for smallest and largest
     smallest = values[0]
-    # Last index is largest
-    largest = values[-1]
+    largest = values[0]
+
+    # Default initialize total
     total = 0
 
-    # Iterate and sum all values
     for val in values:
+        # Sum values of list
         total += val
+
+        # Update smallest and largest values
+        if val < smallest:
+            smallest = val
+        elif val > largest:
+            largest = val
+
 
     # Divide by length for average
     average = total / len(values)
@@ -94,18 +113,18 @@ def min_search(values):
 
 
     indexes = []
-    
+
     # Get minimum value
     min = values[0]
     for val in values:
         if val <= min:
             min = val
-    
+
     # Append all instances of minimum value
     for idx, val in enumerate(values):
         if val == min:
             indexes.append(idx)
-        
+
     return indexes
 
 def list_sums(source1, source2):
@@ -123,7 +142,7 @@ def list_sums(source1, source2):
     -------------------------------------------------------
     """
 
-    target = [] 
+    target = []
 
     # Iterate over a range of the list length
     for idx in range(0, len(source1)):

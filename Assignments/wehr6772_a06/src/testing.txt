@@ -1,0 +1,157 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Enter the winning team: purple
+Enter the winning team: purple
+Enter the winning team: yellow
+Enter the winning team: purple
+Enter the winning team: gold
+Enter the winning team: gold
+Enter the winning team: orange
+Enter the winning team: 
+total_wins() ->
+(3, 2)
+
+Enter the winning team: purple
+Enter the winning team: purple
+Enter the winning team: gold
+Enter the winning team: gold
+Enter the winning team: 
+total_wins() ->
+(2, 2)
+
+Enter the winning team: p
+Enter the winning team: g
+Enter the winning team: g
+Enter the winning team: p
+Enter the winning team: 
+total_wins() ->
+(0, 0)
+
+Enter the winning team: Purple
+Enter the winning team: Purple
+Enter the winning team: Yellow
+Enter the winning team: Purple
+Enter the winning team: Gold
+Enter the winning team: Gold
+Enter the winning team: Orange
+Enter the winning team: 
+total_wins() ->
+(0, 0)
+
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+Input number: 131
+detect_prime(131) -> True
+
+Input number: 4
+detect_prime(4) -> False
+
+Input number: 9
+detect_prime(9) -> False
+
+Input number: -9
+detect_prime(-9) -> True
+
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+Principal amount: $750.00
+Interest rate (%): 8.50
+Payment amount: $200.00
+interest_data(750.0, 8.5, 200.0) ->
+Principal: $   750.00
+Interest interest_rate : 8.50%
+Monthly payment: $200.00
+----------------------------------
+Month Interest   Payment   Balance
+----------------------------------
+    1     5.31    200.00    555.31
+    2     3.93    200.00    359.25
+    3     2.54    200.00    161.79
+    4     1.15    162.94      0.00
+
+Principal amount: $100
+Interest rate (%): 0 
+Payment amount: $50
+interest_data(100.0, 0.0, 50.0) ->
+Principal: $   100.00
+Interest interest_rate : 0.00%
+Monthly payment: $50.00
+----------------------------------
+Month Interest   Payment   Balance
+----------------------------------
+    1     0.00     50.00     50.00
+    2     0.00     50.00      0.00
+
+Principal amount: $-750.00
+Interest rate (%): 8.50
+Payment amount: $200.00
+interest_data(-750.0, 8.5, 200.0) ->
+Principal: $  -750.00
+Interest interest_rate : 8.50%
+Monthly payment: $200.00
+----------------------------------
+Month Interest   Payment   Balance
+----------------------------------
+
+Principal amount: $1000
+Interest rate (%): -5
+Payment amount: $300
+interest_data(1000.0, -5.0, 300.0) ->
+Principal: $  1000.00
+Interest interest_rate : -5.00%
+Monthly payment: $300.00
+----------------------------------
+Month Interest   Payment   Balance
+----------------------------------
+    1    -4.17    300.00    695.83
+    2    -2.90    300.00    392.93
+    3    -1.64    300.00     91.30
+    4    -0.38     90.92      0.00
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Input number: -1024
+count_of_digits(4) -> 4
+
+Input number: 0
+count_of_digits(0) -> 0
+
+Input number: -10001
+count_of_digits(5) -> 5
+
+Input number: 123456789
+count_of_digits(9) -> 9
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+Input number: 9
+factor_summation(9) -> 4
+
+Input number: 100
+factor_summation(100) -> 117
+
+Input number: 0
+factor_summation(0) -> 0
+
+Input number: -9
+factor_summation(-9) -> 0

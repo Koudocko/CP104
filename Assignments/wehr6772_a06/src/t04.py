@@ -1,21 +1,22 @@
 """
 -------------------------------------------------------
-Detects whether an input number is prime.
+Displays the number of digits in a number.
 -------------------------------------------------------
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-12"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
 # Imports
-from functions import detect_prime
+from functions import count_of_digits
 
-# Get number to be tested as prime
+# Get input number
 number = int(input("Input number: "))
 
-# Display whether number is a prime number
-prime = detect_prime(number)
-print(f"detect_prime({number}) -> {prime}")
+# Compute number of digits in number
+digits = count_of_digits(number)
 
+# Display number of digits in number
+print(f"count_of_digits({digits}) -> {digits}")

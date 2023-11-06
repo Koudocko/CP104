@@ -1,22 +1,21 @@
 """
 -------------------------------------------------------
-Determine the sum of factors of a number.
+Detects whether an input number is prime.
 -------------------------------------------------------
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-12"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
 # Imports
-from functions import factor_summation
+from functions import detect_prime
 
-# Get input number
+# Get number to be tested as prime
 number = int(input("Input number: "))
 
-# Compute sum of factors of number
-total = factor_summation(number)
+# Display whether number is a prime number
+prime = detect_prime(number)
+print(f"detect_prime({number}) -> {prime}")
 
-# Display total of all factors of number
-print(f"factor_summation({number}) -> {total}")
