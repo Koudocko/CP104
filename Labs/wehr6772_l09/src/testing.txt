@@ -1,0 +1,96 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+Enter product code: ATV3482S14
+parse_code(ATV3482S14) -> ('ATV', '3482', 'S14')
+
+Enter product code: WLU2023Y01
+parse_code(WLU2023Y01) -> ('WLU', '2023', 'Y01')
+
+Enter product code: ABC1234D
+parse_code(ABC1234D) -> ('ABC', '1234', 'D')
+
+Enter product code: AB
+parse_code(AB) -> ('AB', '', '')
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Enter product code: BFG9000x7
+validate_code(BFG9000x7) -> (True, True, False)
+
+Enter product code: abc1234Abc
+validate_code(abc1234Abc) -> (False, True, True)
+
+Enter product code: A
+validate_code(A) -> (False, False, False)
+
+Enter product code: ABC1b34HA
+validate_code(ABC1b34HA) -> (True, False, True)
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+Enter password: 1234
+not long enough
+no upper case
+no lower case
+
+Enter password: PhilIsReallyCool123
+
+Enter password: test
+not long enough
+no digits
+no upper case
+
+Enter password: 12345678
+no upper case
+no lower case
+
+-------------------------------------------------------
+t10
+-------------------------------------------------------
+
+Enter some text: Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks.
+text_analyze(Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks.) -> (1, 78, 0, 12)
+
+Enter some text: 12345ABCDEabcdefghijklmnop ZXYW 9876
+text_analyze(12345ABCDEabcdefghijklmnop ZXYW 9876) -> (9, 16, 9, 2)
+
+Enter some text: four 1 five5 EIGHT888
+text_analyze(four 1 five5 EIGHT888) -> (5, 8, 5, 3)
+
+Enter some text:                                          
+text_analyze(                                         ) -> (0, 0, 0, 41)
+
+Enter some text: 1 2 3 4 5 6 7 8 9 
+text_analyze(1 2 3 4 5 6 7 8 9) -> (0, 0, 9, 8)
+
+-------------------------------------------------------
+t12
+-------------------------------------------------------
+
+Input string with commas: Number 1, Number 2, Number 3,
+comma_period_replace(Number 1, Number 2, Number 3,) -> (Number 1. Number 2. Number 3.)
+
+Input string with commas: ,,,,,,,,,,,,,........,,,,,,,,,,,,,
+comma_period_replace(,,,,,,,,,,,,,........,,,,,,,,,,,,,) -> (..................................)
+
+Input string with commas: 1,2,3,4,5,6,7,8,9
+comma_period_replace(1,2,3,4,5,6,7,8,9) -> (1.2.3.4.5.6.7.8.9)
+
+Input string with commas: Hello, world!
+comma_period_replace(Hello, world!) -> (Hello. world!)

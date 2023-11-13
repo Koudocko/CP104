@@ -13,12 +13,13 @@ __updated__ = "2023-09-12"
 from functions import list_subtract
 
 # Initialize arguments
-minuend = [5, 5, 4, 5]
-subtrahend = [5]
+minuend = ["z", "y", "x", "w"]
+init_minuend = minuend.copy();
+subtrahend = ["a", "b", "c"]
 
 # Subtract subtrahend list from minuend list
 list_subtract(minuend, subtrahend)
 
 # Display updated minuend list
-print(f"list_subtract([5, 5, 4, 5], [5]) -> None")
+print(f"list_subtract({init_minuend}, {subtrahend}) -> None")
 print(f"  minuend after: {minuend}")

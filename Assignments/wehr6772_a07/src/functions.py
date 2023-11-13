@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Assignment 7 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 def list_factors(number):
     """
     -------------------------------------------------------
@@ -13,7 +24,7 @@ def list_factors(number):
 
     # Initialize factors with empty list
     factors = []
-    
+
     # Include [1, number)
     for num in range(1, number):
         # If evenly divisible by num, push factor to factors
@@ -34,19 +45,17 @@ def list_positives():
     ------------------------------------------------------
     """
 
-    # Initialize number list with empty list
+    # Initialize number list and initial number
     number_list = []
+    number = -1
 
-    # Input loop
-    while True:
+    # Loop until input number is 0
+    while number != 0:
         number = int(input("Enter a positive number: "))
 
         # If number is positive, add to back of list
         if number > 0:
             number_list.append(number)
-        # If number is zero, break from loop
-        elif number == 0:
-            break
 
     return number_list
 
@@ -124,18 +133,19 @@ def verify_sorted(numbers):
     index = -1
 
     # Set last number to first element
-    last = numbers[0]
+    if len(numbers) != 0:
+        last = numbers[0]
 
-    # Iterate over numbers list
-    for idx, num in enumerate(numbers):
-        # If last number is greater than current number
-        if num < last:
-            # Set state to not in order, break out of loop
-            in_order = False
-            index = idx
-            break
-        
-        # Update last number
-        last = num
+        # Iterate over numbers list
+        for idx, num in enumerate(numbers):
+            # If last number is greater than current number
+            if num < last:
+                # Set state to not in order, break out of loop
+                in_order = False
+                index = idx
+                break
+
+            # Update last number
+            last = num
 
     return (in_order, index)

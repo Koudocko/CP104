@@ -13,7 +13,7 @@ __updated__ = "2023-09-12"
 from functions import verify_sorted
 
 # Initialize numbers list
-numbers = [1, 2, 3]
+numbers = []
 
 # Validate that numbers list is sorted
 in_order, index = verify_sorted(numbers)

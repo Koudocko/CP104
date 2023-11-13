@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Lab 8 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 def parse_code(product_code):
     """
     -------------------------------------------------------
@@ -45,9 +56,7 @@ def validate_code(product_code):
     """
 
     # Slice the string into sub strings
-    pc = product_code[0:3]
-    pi = product_code[3:7]
-    pq = product_code[7:]
+    pc, pi, pq = parse_code(product_code)
 
     # Defaults
     category = False
@@ -57,12 +66,12 @@ def validate_code(product_code):
     # Validate product category
     if len(pc) == 3 and pc == pc.upper() and pc.isalpha():
         category = True 
-        # Validate product digits
-        if len(pi) == 4 and pi.isdigit():
-            digits = True
-            # Validate product qualifiers
-            if len(pq) > 0 and pq[0].isupper():
-                qualifiers = True
+    # Validate product digits
+    if len(pi) == 4 and pi.isdigit():
+        digits = True
+    # Validate product qualifiers
+    if len(pq) > 0 and pq[0].isupper():
+        qualifiers = True
 
     return (category, digits, qualifiers)
 
@@ -156,7 +165,7 @@ def comma_period_replace(string):
     ------------------------------------------------------
     """
 
-
+    # Replace all commas with periods using built in string method
     out = string.replace(',', '.')
 
     return out

@@ -12,8 +12,12 @@ __updated__ = "2023-09-12"
 # Imports
 from functions import get_indexes
 
+# List to search and target
+numbers = [5, 1, 8, 9, 5, 2, 5, 3]
+target_number = 5
+
 # Get list of indexes matching target in list of numbers
-index_list = get_indexes([5, 1, 8, 9, 5, 2, 5, 3], 5)
+index_list = get_indexes(numbers, target_number)
 
 # Print the indexes of the matches
-print(f"get_indexes([5, 1, 8, 9, 5, 2, 5, 3], 5) -> {index_list}")
+print(f"get_indexes({numbers}, {target_number}) -> {index_list}")
