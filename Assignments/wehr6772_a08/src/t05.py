@@ -5,7 +5,7 @@ Deterins if a list of strings has a word chain.
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-12"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 

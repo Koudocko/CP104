@@ -1,0 +1,71 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Find record n
+Enter a record number: 3
+['43564', 'Weilin', 'Zhao', '450.25', '1998-01-03']
+
+Find record n
+Enter a record number: 9
+[]
+
+Find record n
+Enter a record number: 0
+['12345', 'Tom', 'Black', '300.00', '1998-01-30']
+
+Find record n
+Enter a record number: -1
+['12345', 'Tom', 'Black', '300.00', '1998-01-30']
+
+-------------------------------------------------------
+t06
+-------------------------------------------------------
+
+Smallest: 1
+Largest: 13
+Total: 113
+Average: 7.0625
+
+-------------------------------------------------------
+t10
+-------------------------------------------------------
+
+file 'words.txt' open for reading
+Word to count: Exercise
+'Exercise' appears 3 time(s)
+
+file 'words.txt' open for reading
+Word to count: Python
+'Python' appears 3 time(s)
+
+file 'words.txt' open for reading
+Word to count: Joestar
+'Joestar' appears 0 time(s)
+
+file 'words.txt' open for reading
+Word to count: Canada
+'Canada' appears 1 time(s)
+
+-------------------------------------------------------
+t11
+-------------------------------------------------------
+
+file 'words.txt' open for reading
+'Education' is the last longest word
+
+-------------------------------------------------------
+t13
+-------------------------------------------------------
+
+Copying 'words.txt' to 'new_words.txt'

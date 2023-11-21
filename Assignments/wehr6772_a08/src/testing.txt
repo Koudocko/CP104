@@ -1,0 +1,89 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+Version: 2023-09-15
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+
+Input sentence: StopAndSmellTheRoses.
+add_spaces(StopAndSmellTheRoses.) -> Stop and smell the roses.
+
+Input sentence: Stop And Smell The Roses.
+add_spaces(Stop And Smell The Roses.) -> Stop  and  smell  the  roses.
+
+Input sentence: CAPS
+add_spaces(CAPS) -> C a p s
+
+Input sentence: OneSentenceOnly.NotTwo
+add_spaces(OneSentenceOnly.NotTwo) -> One sentence only. not two
+
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+
+Input singular string: city
+pluralize('city') -> cities
+
+Input singular string: student
+pluralize('student') -> students
+
+Input singular string: joy
+pluralize('joy') -> joys
+
+Input singular string: apples
+pluralize('apples') -> appleses
+
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+
+Input string 1: abc
+Input string 2: ABC
+common_end('abc', 'ABC') ->
+
+Input string 1: running
+Input string 2: jumping
+common_end('running', 'jumping') -> ing
+
+Input string 1: thisisalmostthesameas
+Input string 2: thisisalmosthesameaas
+common_end('thisisalmostthesameas', 'thisisalmosthesameaas') -> as
+
+Input string 1: kidney bean
+Input string 2: black bean
+common_end('kidney bean', 'black bean') ->  bean
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+
+Input ISBN: 978-3-12148410--0
+valid_isbn('978-3-12148410--0') -> False
+
+Input ISBN: 978-3-16-148410-0
+valid_isbn('978-3-16-148410-0') -> True
+
+Input ISBN: 978-3-16-14841-00
+valid_isbn('978-3-16-14841-00') -> False
+
+Input ISBN: 978-3-16-1484-1- 
+valid_isbn('978-3-16-1484-1-') -> False
+
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+
+word_chain(['camel', 'leopard', 'dog', 'giraffe', 'elephant']) -> True
+
+word_chain(['dog', 'god', 'cat']) -> False
+
+word_chain(['  ', '  ']) -> True
+
+word_chain(['single']) -> True

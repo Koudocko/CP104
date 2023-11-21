@@ -5,7 +5,7 @@ Convert a singular string to a plural one.
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-12"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
@@ -20,4 +20,3 @@ pluralized = pluralize(string)
 
 # Print the plural string
 print(f"pluralize('{string}') -> {pluralized}")
-

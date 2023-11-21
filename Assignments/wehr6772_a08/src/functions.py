@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Assignment 8 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 def add_spaces(sentence):
     """
     -------------------------------------------------------
@@ -18,14 +29,14 @@ def add_spaces(sentence):
     """
 
     # Initialze new empty string
-    spaced = '' 
+    spaced = ''
 
     # Iterate over chaarcters in sentence
     for idx, character in enumerate(sentence):
         # If character is upper case, add a space
         if character.isupper():
             spaced += ' '
-        
+
         # If first letter in sentence, keep uppercase
         if idx == 0:
             spaced += character
@@ -95,7 +106,7 @@ def common_end(str1, str2):
     # Initalize suffix to empty (default)
     suffix = ""
 
-    # While the slice from the index to the end 
+    # While the slice from the index to the end
     # of str1 is the same as the end of str2
     # and does not pass the start of str1
     while (
@@ -148,14 +159,18 @@ def valid_isbn(isbn):
 
     # Get first 3 digits
     first_group = isbn[0:3]
+
     # Check that first 3 digits is 978 or 979
     if first_group != "978" and first_group != "979":
+        is_valid = False
+
+    # If last group is not one digit
+    if len(isbn.rsplit('-', 1)[-1]) != 1:
         is_valid = False
 
     # Check that ISBN length is 17
     if len(isbn) != 17:
         is_valid = False
-
 
     return is_valid
 
@@ -178,19 +193,16 @@ def has_word_chain(words):
 
     # Word chain is true unless proven otherwise
     word_chain = True
-    # First word edge case, must be equal
-    prev_word = words[0][0]
+    trailing = words[0][0]
 
     # Iterate over the words
-    idx = 0
-    while idx < len(words):
+    for word in words:
         # If first letter of current does not equal last letter of previous
-        if words[idx][0] != prev_word[-1]:
+        if word[0] != trailing:
             word_chain = False
+            break
 
-        # Set previous word to current
-        prev_word = words[idx]
-        # Increment iterator count
-        idx += 1
-    
+        # Update trailing letter
+        trailing = word[-1]
+
     return word_chain

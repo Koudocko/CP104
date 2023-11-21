@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Lab 10 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 def customer_record(fh, n):
     """
     -------------------------------------------------------
@@ -129,19 +140,17 @@ def find_longest(fh):
     
     # Initialze word variable
     word = ""
+    line = " "
     
     # Loop until end of file
-    while True:
+    while line != "":
+        # Get line from file
         line = fh.readline()
+        line = line.strip()
 
-        if line != "":
-            line = line.strip()
-
-            # Update longest word if current is greater than or equal in length
-            if len(line) >= len(word):
-                word = line
-        else:
-            break
+        # Update longest word if current is greater than or equal in length
+        if len(line) >= len(word):
+            word = line
 
     return word
 
@@ -160,14 +169,13 @@ def file_copy(fh_1, fh_2):
     ------------------------------------------------------
     """
 
-    while True:
+    line = " "
+
+    # Loop until end of file
+    while line != "":
         line = fh_1.readline()
 
         # Copy line to new_words.txt
-        if line != "":
-            fh_2.write(line)
-        # Break at end of file
-        else:
-            break
+        fh_2.write(line)
 
     return
