@@ -194,9 +194,11 @@ def has_word_chain(words):
     # Word chain is true unless proven otherwise
     word_chain = True
     trailing = words[0][0]
+    idx = 0
 
     # Iterate over the words
-    for word in words:
+    while idx < len(words):
+        word = words[idx]
         # If first letter of current does not equal last letter of previous
         if word[0] != trailing:
             word_chain = False
@@ -204,5 +206,6 @@ def has_word_chain(words):
 
         # Update trailing letter
         trailing = word[-1]
+        idx += 1
 
     return word_chain
