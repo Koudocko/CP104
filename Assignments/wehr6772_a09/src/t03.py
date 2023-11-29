@@ -5,7 +5,7 @@ Counts the number of each type of character in addresses.txt.
 Author:  Tyler Wehrle
 ID:      169056772
 Email:   wehr6772@mylaurier.ca
-__updated__ = "2023-09-12"
+__updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
@@ -23,4 +23,3 @@ print(f"file_statistics(file_handle) -> {ucount}, {lcount}, {dcount}, {wcount}, 
 
 # Close file handle
 file_handle.close()
-

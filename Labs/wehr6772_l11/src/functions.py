@@ -1,3 +1,15 @@
+"""
+-------------------------------------------------------
+Lab 11 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
+# Imports
 from random import randint, uniform
 
 def generate_matrix_num(rows, cols, low, high, value_type):
@@ -64,7 +76,7 @@ def print_matrix_num(matrix, value_type):
     """
 
     # Number of columns constant
-    NUM_COLS = len(matrix[0])
+    NUM_COLS = len(matrix[0]) if len(matrix) > 0 else 0
 
     # Dynamic formatter based on value_type
     if value_type == "float":
@@ -76,7 +88,7 @@ def print_matrix_num(matrix, value_type):
     print(" ", end="")
     for col in range(0, NUM_COLS):
         print(f"{col:>7d}", end="")
-    print('\n')
+    print()
 
     # Iterate over rows of the 2D matrix
     for idx, row in enumerate(matrix):
@@ -85,7 +97,7 @@ def print_matrix_num(matrix, value_type):
         # Iterate over cols of the 2D matrix
         for col in row:
             print(f"{col:>7{fmt}}", end="")
-        print('\n')
+        print()
 
     return
 

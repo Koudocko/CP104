@@ -1,3 +1,14 @@
+"""
+-------------------------------------------------------
+Assignment 9 functions
+-------------------------------------------------------
+Author:  Tyler Wehrle
+ID:      169056772
+Email:   wehr6772@mylaurier.ca
+__updated__ = "2023-09-15"
+-------------------------------------------------------
+"""
+
 def file_top(file_handle, count):
     """
     -------------------------------------------------------
@@ -13,17 +24,16 @@ def file_top(file_handle, count):
         None
     -------------------------------------------------------
     """
-    
+
+    line = " "
+
     # Loop until counter depletes
-    while count > 0:
+    while count > 0 and line != "":
+        # Read line
         line = file_handle.readline()
 
         # Strips whitepspace for test cases
-        if line != "":
-            print(line.strip())
-        else:
-            break
-        
+        print(line.strip())
         count -= 1
 
     return
@@ -44,12 +54,13 @@ def read_integers(file_handle):
 
     # Initializes empty numbers list
     numbers_list = [] 
+    line = " "
 
-    while True:
+    while line != "":
         line = file_handle.readline()
 
         if line != "":
-            # Split entries by ocmma
+            # Split entries by comma
             numbers = line.split(',')
             # Remove name, keep numbers
             numbers.pop(0)
@@ -57,8 +68,6 @@ def read_integers(file_handle):
             # Iterate over numbers and append int casted numbers to list
             for number in numbers:
                 numbers_list.append(int(number))
-        else:
-            break;
 
     return numbers_list
 
@@ -83,25 +92,23 @@ def file_statistics(file_handle):
 
     # 0 initialize counters
     ucount, lcount, dcount, wcount, rcount = 0, 0, 0, 0, 0
+    line = " "
 
-    while True:
+    while line != "":
         line = file_handle.readline()
 
-        if line != "":
-            # Match cases to increment for each type of character
-            for character in line:
-                if character.isupper():
-                    ucount += 1
-                elif character.islower():
-                    lcount += 1
-                elif character.isdigit():
-                    dcount += 1
-                elif character.isspace():
-                    wcount += 1
-                else:
-                    rcount += 1
-        else:
-            break
+        # Match cases to increment for each type of character
+        for character in line:
+            if character.isupper():
+                ucount += 1
+            elif character.islower():
+                lcount += 1
+            elif character.isdigit():
+                dcount += 1
+            elif character.isspace():
+                wcount += 1
+            else:
+                rcount += 1
 
     return (ucount, lcount, dcount, wcount, rcount)
 
@@ -125,8 +132,9 @@ def line_numbering(fh_read, fh_write):
 
     # Initialize counter with 0
     count = 0
+    line = " "
 
-    while True:
+    while line != "":
         line = fh_read.readline()
 
         if line != "":
@@ -135,8 +143,6 @@ def line_numbering(fh_read, fh_write):
 
             # Overwrite line in file
             fh_write.write(line)
-        else:
-            break
 
         count += 1
 
@@ -170,13 +176,16 @@ def student_stats(file_handle):
     high = -1 
     low = 101 
 
-    while True:
+    # Line default
+    line = " "
+
+    while line != "":
         line = file_handle.readline()
 
         if line != "":
             # Split entry by commas
             student_entry = line.split(',')
-            
+
             # Parse grade as int
             grade = int(student_entry[3])
             # Store id
@@ -195,8 +204,6 @@ def student_stats(file_handle):
             grade_sum += grade
             # Increment number of entries
             num_entries += 1
-        else:
-            break
 
     # Compute average grade
     avg = grade_sum / num_entries
