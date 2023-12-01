@@ -62,12 +62,14 @@ def read_integers(file_handle):
         if line != "":
             # Split entries by comma
             numbers = line.split(',')
-            # Remove name, keep numbers
-            numbers.pop(0)
 
             # Iterate over numbers and append int casted numbers to list
             for number in numbers:
-                numbers_list.append(int(number))
+                number = number.strip()
+
+                # Only accept numbers
+                if number.isdigit():
+                    numbers_list.append(int(number))
 
     return numbers_list
 
